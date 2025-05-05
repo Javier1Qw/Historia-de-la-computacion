@@ -1,58 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  
-  header {
-    background-color: #003366;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  .modulo {
-    margin-bottom: 40px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  }
-  
-  footer {
-    background-color: #003366;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-  }
-  .modulo.activo {
-    border: 2px solid #0066cc;
-    transition: border 0.3s ease-in-out;
-  }
-  
+  font-family: 'Verdana', sans-serif;
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #5c6bc0;
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 15px;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: #3f51b5;
+}
+
+main {
+  padding: 30px;
+}
+
+.invento {
+  background-color: white;
+  margin-bottom: 30px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.invento:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.invento.destacado {
+  border-left: 5px solid #5c6bc0;
+  background-color: #eef0fb;
+  box-shadow: 0 4px 14px rgba(92, 107, 192, 0.3);
+}
+
+footer {
+  background-color: #5c6bc0;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}

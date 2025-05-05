@@ -1,7 +1,12 @@
-// Agrega y quita clase activa al hacer clic en los módulos
-document.querySelectorAll('.modulo').forEach(modulo => {
-    modulo.addEventListener('click', () => {
-      modulo.classList.toggle('activo');
+// Destacar inventos al hacer clic
+document.querySelectorAll('.invento').forEach(seccion => {
+    seccion.addEventListener('click', () => {
+      // Quitar la clase de otros
+      document.querySelectorAll('.invento').forEach(item => {
+        item.classList.remove('destacado');
+      });
+      // Agregar clase al seleccionado
+      seccion.classList.add('destacado');
     });
   });
   
